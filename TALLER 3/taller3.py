@@ -66,7 +66,7 @@ while siguinete:
     print("1. Registrar un cliente.")
     print("2. Listar clientes.")
     print("3. Eliminar un cliente.")
-    print("4. Registrar un pedido.")
+    print("4. Registrar un producto.")
     print("5. Listar pedidos de un cliente.")
     print("6. Guardar una venta.")
     print("7. Listar las ventas realizadas por cliente.")
@@ -146,7 +146,7 @@ while siguinete:
                             arr_c = c.strip().split(",")
                             if arr_c[0] == id_c and arr_c[1] == nombre_cliente and arr_c[-1] == "1":
                                 subtotal = precio * cantidad
-                                print(f"{prod} | Cantidad: {cantidad} | Precio: {precio} | Subtotal: {subtotal}")
+                                print(f"Id_producto{id_p} | Cantidad: {cantidad} | Precio: {precio} | Subtotal: {subtotal} | Cliente: {id_c}")
                                 total += subtotal
             print(f"Total de ventas: {total}")
     
